@@ -1170,13 +1170,13 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: black;
+    color: white;
     font-size: 1.2rem;
     flex-shrink: 0;
 }
 
 .contact-details h4 {
-    color: var(--light-100);
+    color: var(--light-400);
     margin-bottom: var(--spacing-xs);
     font-size: 1.1rem;
 }
