@@ -458,6 +458,7 @@ if (aboutSection) {
 
 // Add hover effects for interactive elements
 document.addEventListener('DOMContentLoaded', () => {
+    new CookieManager();
     // Add ripple effect to buttons
     const buttons = document.querySelectorAll('.btn');
     buttons.forEach(button => {
