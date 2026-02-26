@@ -198,37 +198,7 @@ class Animator {
 
         const text = element.textContent;
         element.innerHTML = '';
-        
-        // Split text into spans
-        const chars = text.split('').map(char => {
-            const span = document.createElement('span');
-            span.textContent = char === ' ' ? '\u00A0' : char;
-            span.style.display = 'inline-block';
-            span.style.opacity = '0';
-            span.style.transform = 'translateY(20px)';
-            element.appendChild(span);
-            return span;
-        });
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    setTimeout(() => {
-                        chars.forEach((span, index) => {
-                            setTimeout(() => {
-                                span.style.opacity = '1';
-                                span.style.transform = 'translateY(0)';
-                                span.style.transition = `opacity ${duration}ms ease, transform ${duration}ms ease`;
-                            }, index * stagger);
-                        });
-                    }, delay);
-                    observer.unobserve(element);
-                }
-            });
-        });
-
-        observer.observe(element);
-    }
+    
 
     // Morphing shape animation
     morphShape(element, options = {}) {
