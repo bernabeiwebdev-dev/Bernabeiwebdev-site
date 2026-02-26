@@ -1176,7 +1176,7 @@ section {
 }
 
 .contact-details h4 {
-    color: var(--light-400);
+    color: var(--light-100);
     margin-bottom: var(--spacing-xs);
     font-size: 1.1rem;
 }
