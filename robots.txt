@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# File e cartelle da non indicizzare
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+
+# Sitemap
+Sitemap: https://bernabeiwebdev.it/sitemap.xml
+
+# Tempo di crawl per Googlebot
+Crawl-delay: 1

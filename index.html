@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Macerata | Bernabei Web Dev - Creazione Siti Web Professionali nelle Marche</title>
+    <meta name="description" content="Sviluppatore web a Macerata, Marche. Creazione siti web moderni, responsive e ottimizzati SEO per aziende locali. Siti veloci e professionali a partire da 500€.">
+    <meta name="keywords" content="web developer Macerata, creazione siti web Macerata, sviluppatore web Marche, siti web professionali Macerata, web design Marche, SEO Macerata">
+    <meta name="author" content="Bernabei Web Dev">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Web Developer Macerata | Bernabei Web Dev">
+    <meta property="og:description" content="Creazione siti web professionali a Macerata. Sviluppatore freelance per aziende nelle Marche. Siti moderni, veloci e ottimizzati SEO.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bernabeiwebdev.it">
+    <meta property="og:locale" content="it_IT">
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Bernabei Web Dev",
+        "description": "Sviluppatore web professionale a Macerata, Marche",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Macerata",
+            "addressRegion": "Marche",
+            "addressCountry": "IT"
+        },
+        "telephone": "+39 XXX XXX XXXX",
+        "email": "info@bernabeiwebdev.it",
+        "url": "https://bernabeiwebdev.it",
+        "serviceType": "Web Development",
+        "areaServed": {
+            "@type": "State",
+            "name": "Marche"
+        }
+    }
+    </script>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <span class="logo-text">&lt;/&gt;</span>
+            </div>
+            <div class="loading-text">Caricamento...</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home" class="logo">
+                    <span class="logo-symbol">&lt;/&gt;</span>
+                    <span class="logo-text">Bernabei<span class="logo-accent">WebDev</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link" data-section="home">
+                    <span class="nav-number">01.</span>
+                    <span class="nav-text">Home</span>
+                </a>
+                <a href="#about" class="nav-link" data-section="about">
+                    <span class="nav-number">02.</span>
+                    <span class="nav-text">Chi sono</span>
+                </a>
+                <a href="#services" class="nav-link" data-section="services">
+                    <span class="nav-number">03.</span>
+                    <span class="nav-text">Servizi</span>
+                </a>
+                <a href="#portfolio" class="nav-link" data-section="portfolio">
+                    <span class="nav-number">04.</span>
+                    <span class="nav-text">Portfolio</span>
+                </a>
+                <a href="#contact" class="nav-link" data-section="contact">
+                    <span class="nav-number">05.</span>
+                    <span class="nav-text">Contatti</span>
+                </a>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-gradient"></div>
+            <div class="hero-particles" id="particles"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-subtitle animate-fade-in-up">
+                    <span class="subtitle-line"></span>
+                    <span class="subtitle-text">Sviluppatore Web & Designer</span>
+                </div>
+                
+                <h1 class="hero-title animate-fade-in-up" style="animation-delay: 0.2s;">
+                    <span class="title-line">Trasformo idee in</span>
+                    <span class="title-accent">esperienze digitali</span>
+                    <span class="title-line">straordinarie</span>
+                </h1>
+                
+                <p class="hero-description animate-fade-in-up" style="animation-delay: 0.4s;">
+                    Specializzato nella creazione di siti web moderni, responsive e ad alte prestazioni. 
+                    Amo trasformare concetti astratti in realtà digitali che catturano e ispirano.
+                </p>
+                
+                <div class="hero-actions animate-fade-in-up" style="animation-delay: 0.6s;">
+                    <a href="#contact" class="btn btn-primary">
+                        <span class="btn-text">Inizia il tuo progetto</span>
+                        <span class="btn-icon">
+                            <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </a>
+                    <a href="#portfolio" class="btn btn-secondary">
+                        <span class="btn-text">Guarda i miei lavori</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual animate-fade-in" style="animation-delay: 0.8s;">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="window-title">portfolio.js</div>
+                    </div>
+                    <div class="window-content">
+                        <div class="code-line">
+                            <span class="code-keyword">const</span>
+                            <span class="code-variable">developer</span>
+                            <span class="code-operator">=</span>
+                            <span class="code-brace">{</span>
+                        </div>
+                        <div class="code-line indent">
+                            <span class="code-property">name</span>
+                            <span class="code-operator">:</span>
+                            <span class="code-string">'Bernabei Web Dev'</span>
+                            <span class="code-comma">,</span>
+                        </div>
+                        <div class="code-line indent">
+                            <span class="code-property">skills</span>
+                            <span class="code-operator">:</span>
+                            <span class="code-bracket">[</span>
+                        </div>
+                        <div class="code-line indent-2">
+                            <span class="code-string">'HTML'</span>
+                            <span class="code-comma">,</span>
+                            <span class="code-string">'CSS'</span>
+                            <span class="code-comma">,</span>
+                            <span class="code-string">'JavaScript'</span>
+                            <span class="code-comma">,</span>
+                        </div>
+                        <div class="code-line indent-2">
+                            <span class="code-string">'React'</span>
+                            <span class="code-comma">,</span>
+                            <span class="code-string">'Node.js'</span>
+                            <span class="code-comma">,</span>
+                            <span class="code-string">'UI/UX'</span>
+                        </div>
+                        <div class="code-line indent">
+                            <span class="code-bracket">]</span>
+                            <span class="code-comma">,</span>
+                        </div>
+                        <div class="code-line indent">
+                            <span class="code-property">passion</span>
+                            <span class="code-operator">:</span>
+                            <span class="code-string">'Creare esperienze digitali'</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="code-brace">};</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-indicator">
+                <span class="scroll-text">Scorri per scoprire</span>
+                <div class="scroll-animation">
+                    <div class="scroll-wheel"></div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">
+                    <span class="section-number">01.</span>
+                    <span class="section-subtitle-text">Chi sono</span>
+                </div>
+                <h2 class="section-title">Piacere, sono un creatore di esperienze digitali</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        Sono un appassionato sviluppatore web con un amore profondo per il design e la tecnologia. 
+                        Trasformo idee complesse in soluzioni digitali eleganti e funzionali.
+                    </p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h3>Clean Code</h3>
+                                <p>Scrivo codice pulito, efficiente e manutenibile</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h3>UI/UX Design</h3>
+                                <p>Design intuitivi che piacciono agli utenti</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h3>Performance</h3>
+                                <p>Siti veloci e ottimizzati per tutti i dispositivi</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>Frontend</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">HTML5</span>
+                                <span class="skill-tag">CSS3</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">Vue.js</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Backend</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">PHP</span>
+                                <span class="skill-tag">MySQL</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Design</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Figma</span>
+                                <span class="skill-tag">Adobe XD</span>
+                                <span class="skill-tag">Photoshop</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <div class="profile-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h3>Marco Bernabei</h3>
+                            <p>Web Developer & Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">
+                    <span class="section-number">02.</span>
+                    <span class="section-subtitle-text">Servizi</span>
+                </div>
+                <h2 class="section-title">Cosa posso fare per te</h2>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Sviluppo Web</h3>
+                    <p>Siti web moderni, responsive e performanti che catturano l'attenzione dei tuoi visitatori.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">Responsive Design</span>
+                        <span class="feature-tag">SEO Ottimizzato</span>
+                        <span class="feature-tag">Veloce</span>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Web App</h3>
+                    <p>Applicazioni web complesse con funzionalità avanzate e interfaccia utente intuitiva.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">Progressive Web App</span>
+                        <span class="feature-tag">Real-time</span>
+                        <span class="feature-tag">Scalabile</span>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Design accattivanti e intuitivi che trasformano i visitatori in clienti soddisfatti.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">User Research</span>
+                        <span class="feature-tag">Prototyping</span>
+                        <span class="feature-tag">Design System</span>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>E-commerce</h3>
+                    <p>Negozi online completi con gestione prodotti, pagamenti e spedizioni integrate.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">Carrello</span>
+                        <span class="feature-tag">Pagamenti Sicuri</span>
+                        <span class="feature-tag">Gestione Ordini</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">
+                    <span class="section-number">03.</span>
+                    <span class="section-subtitle-text">Portfolio</span>
+                </div>
+                <h2 class="section-title">Progetti Realizzati per Clienti nelle Marche</h2>
+                <p class="section-description">Dai un'occhiata ai miei ultimi lavori per aziende di Macerata e dintorni</p>
+            </div>
+            
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">Tutti</button>
+                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                <button class="filter-btn" data-filter="corporate">Aziende</button>
+                <button class="filter-btn" data-filter="portfolio">Portfolio</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="corporate">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <div class="portfolio-placeholder">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <h3>Studio Commercialista Macerata</h3>
+                                    <p>Sito web professionale per studio associato con area clienti privata</p>
+                                    <div class="portfolio-tech">
+                                        <span class="tech-tag">WordPress</span>
+                                        <span class="tech-tag">Custom Theme</span>
+                                        <span class="tech-tag">SEO</span>
+                                    </div>
+                                    <div class="portfolio-results">
+                                        <i class="fas fa-chart-line"></i>
+                                        <span>+150% visite organiche</span>
+                                    </div>
+                                    <a href="#" class="btn btn-outline">
+                                        <span>Visualizza Progetto</span>
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Studio Commercialista</h3>
+                            <p>Macerata</p>
+                            <span class="portfolio-category">Azienda</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="ecommerce">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <div class="portfolio-placeholder">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <h3>E-commerce Vini Marchigiani</h3>
+                                    <p>Negozio online per vendita vini locali con spedizione in tutta Italia</p>
+                                    <div class="portfolio-tech">
+                                        <span class="tech-tag">WooCommerce</span>
+                                        <span class="tech-tag">Stripe</span>
+                                        <span class="tech-tag">SEO Locale</span>
+                                    </div>
+                                    <div class="portfolio-results">
+                                        <i class="fas fa-euro-sign"></i>
+                                        <span>+300% vendite online</span>
+                                    </div>
+                                    <a href="#" class="btn btn-outline">
+                                        <span>Visualizza Progetto</span>
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Vini Marchigiani</h3>
+                            <p>Provincia Macerata</p>
+                            <span class="portfolio-category">E-commerce</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="corporate">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <div class="portfolio-placeholder">
+                                <i class="fas fa-hotel"></i>
+                            </div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <h3>Hotel 4 Stelle Jesi</h3>
+                                    <p>Sito web con booking engine integrato per hotel nelle Marche</p>
+                                    <div class="portfolio-tech">
+                                        <span class="tech-tag">Custom PHP</span>
+                                        <span class="tech-tag">MySQL</span>
+                                        <span class="tech-tag">Booking System</span>
+                                    </div>
+                                    <div class="portfolio-results">
+                                        <i class="fas fa-calendar-check"></i>
+                                        <span>+200% prenotazioni</span>
+                                    </div>
+                                    <a href="#" class="btn btn-outline">
+                                        <span>Visualizza Progetto</span>
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Hotel Premium</h3>
+                            <p>Jesi (AN)</p>
+                            <span class="portfolio-category">Azienda</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="portfolio">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <div class="portfolio-placeholder">
+                                <i class="fas fa-camera"></i>
+                            </div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <h3>Fotografo Matrimoni Senigallia</h3>
+                                    <p>Portfolio fotografico elegante con galleria filtrabile e contatti</p>
+                                    <div class="portfolio-tech">
+                                        <span class="tech-tag">React</span>
+                                        <span class="tech-tag">Lightbox</span>
+                                        <span class="tech-tag">Gallery</span>
+                                    </div>
+                                    <div class="portfolio-results">
+                                        <i class="fas fa-heart"></i>
+                                        <span>+80% contatti</span>
+                                    </div>
+                                    <a href="#" class="btn btn-outline">
+                                        <span>Visualizza Progetto</span>
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Fotografo Matrimoni</h3>
+                            <p>Senigallia (AN)</p>
+                            <span class="portfolio-category">Portfolio</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="ecommerce">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <div class="portfolio-placeholder">
+                                <i class="fas fa-pizza-slice"></i>
+                            </div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <h3>Pizzeria Delivery Civitanova</h3>
+                                    <p>Sistema di ordinazione online con delivery tracking in tempo reale</p>
+                                    <div class="portfolio-tech">
+                                        <span class="tech-tag">React Native</span>
+                                        <span class="tech-tag">Node.js</span>
+                                        <span class="tech-tag">GPS Tracking</span>
+                                    </div>
+                                    <div class="portfolio-results">
+                                        <i class="fas fa-motorcycle"></i>
+                                        <span>+250% ordini online</span>
+                                    </div>
+                                    <a href="#" class="btn btn-outline">
+                                        <span>Visualizza Progetto</span>
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Pizzeria Delivery</h3>
+                            <p>Civitanova Marche</p>
+                            <span class="portfolio-category">E-commerce</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="corporate">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <div class="portfolio-placeholder">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <h3>Officina Meccanica Fabriano</h3>
+                                    <p>Sito web aziendale con gestione preventivi e area clienti dedicata</p>
+                                    <div class="portfolio-tech">
+                                        <span class="tech-tag">Laravel</span>
+                                        <span class="tech-tag">Vue.js</span>
+                                        <span class="tech-tag">CRM</span>
+                                    </div>
+                                    <div class="portfolio-results">
+                                        <i class="fas fa-file-invoice"></i>
+                                        <span>+180% preventivi online</span>
+                                    </div>
+                                    <a href="#" class="btn btn-outline">
+                                        <span>Visualizza Progetto</span>
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Officina Meccanica</h3>
+                            <p>Fabriano (AN)</p>
+                            <span class="portfolio-category">Azienda</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-cta">
+                <p>Hai un progetto in mente? Parliamone insieme!</p>
+                <a href="#contact" class="btn btn-primary">Inizia il tuo progetto</a>
+            </div>
+        </div>
+    </section>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3>Web App Dashboard</h3>
+                                <p>Dashboard analytics con grafici interattivi</p>
+                                <div class="portfolio-tech">
+                                    <span class="tech-tag">Vue.js</span>
+                                    <span class="tech-tag">Chart.js</span>
+                                    <span class="tech-tag">API</span>
+                                </div>
+                                <a href="#" class="btn btn-outline">
+                                    <span>Guarda Progetto</span>
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">
+                    <span class="section-number">04.</span>
+                    <span class="section-subtitle-text">Contatti</span>
+                </div>
+                <h2 class="section-title">Hai un progetto in mente?</h2>
+                <p class="section-description">Parliamone! Ti aiuterò a trasformare la tua idea in realtà.</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Informazioni di contatto</h3>
+                    <p>Pronto per iniziare il tuo progetto? Ecco come puoi raggiungermi:</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:info@bernabeiwebdev.it">info@bernabeiwebdev.it</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Telefono</h4>
+                                <a href="tel:+393331234567">+39 333 123 4567</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Località</h4>
+                                <span>Italia</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nome completo</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="project">Tipo di progetto</label>
+                        <select id="project" name="project" required>
+                            <option value="">Seleziona un tipo di progetto</option>
+                            <option value="website">Sito Web</option>
+                            <option value="webapp">Web App</option>
+                            <option value="ecommerce">E-commerce</option>
+                            <option value="design">Design</option>
+                            <option value="other">Altro</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Descrivi il tuo progetto</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        <span class="btn-text">Invia messaggio</span>
+                        <span class="btn-icon">
+                            <i class="fas fa-paper-plane"></i>
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-symbol">&lt;/&gt;</span>
+                        <span class="logo-text">Bernabei<span class="logo-accent">WebDev</span></span>
+                    </div>
+                    <p>Creo esperienze digitali straordinarie per il tuo business.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Collegamenti</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">Chi sono</a></li>
+                            <li><a href="#services">Servizi</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Social</h4>
+                        <ul>
+                            <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bernabei Web Dev. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <h4>🍪 Utilizziamo i cookie</h4>
+                <p>Utilizziamo cookie tecnici per il funzionamento del sito e cookie di terze parti per analisi statistiche anonime. <a href="privacy-policy.html">Privacy Policy</a></p>
+            </div>
+            <div class="cookie-buttons">
+                <button id="cookie-accept" class="btn btn-primary">Accetta tutti</button>
+                <button id="cookie-reject" class="btn btn-outline">Rifiuta</button>
+                <button id="cookie-settings" class="btn btn-text">Impostazioni</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/particles.js"></script>
+</body>
+</html>
