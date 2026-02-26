@@ -1170,7 +1170,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: black;
     font-size: 1.2rem;
     flex-shrink: 0;
 }
