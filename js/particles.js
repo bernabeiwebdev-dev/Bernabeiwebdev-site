@@ -363,7 +363,7 @@ function initCursorEffect() {
         position: fixed;
         width: 20px;
         height: 20px;
-        background: radial-gradient(circle, rgba(99, 102, 241, 0.8) 0%, transparent 70%);
+        background: radial-gradient(circle, rgba(60, 224, 208, 0.8) 0%, transparent 70%);
         border-radius: 50%;
         pointer-events: none;
         z-index: 9999;
