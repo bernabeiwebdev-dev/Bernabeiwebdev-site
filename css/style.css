@@ -856,6 +856,8 @@ section {
 }
 
 .portfolio-content {
+    background-image: url("img/cantina-bacelli.png");
+    background-size: cover; 
     text-align: center;
     color: white;
     max-width: 300px;
