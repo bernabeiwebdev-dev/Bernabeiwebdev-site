@@ -1012,14 +1012,14 @@ section {
 .btn-text {
     background: transparent;
     border: none;
-    color: var(--light-400);
+    color: var(--light-100);
     cursor: pointer;
     padding: var(--spacing-sm);
     transition: var(--transition-normal);
 }
 
 .btn-text:hover {
-    color: var(--primary-color);
+    color: var(--light-100);
 }
 
 /* Cookie Settings Modal */
