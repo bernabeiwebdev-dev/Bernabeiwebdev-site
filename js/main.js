@@ -177,22 +177,6 @@ function initializeAnimations() {
     });
 }
 
-// Typing Animation for Hero Title
-function typeWriter(element, text, speed = 50) {
-    let i = 0;
-    element.innerHTML = '';
-    
-    function type() {
-        if (i < text.length) {
-            element.innerHTML += text.charAt(i);
-            i++;
-            setTimeout(type, speed);
-        }
-    }
-    
-    type();
-}
-
 // Particle Animation (Simple Version)
 function createParticles() {
     const particlesContainer = document.getElementById('particles');
